@@ -46,3 +46,40 @@ const nestedMuppet = {
 // 7. Use destructuring to assign all variables using the keys as the variable names
 
 // 8. Use destructuring to assign songs 2 and 4, and Kermit's job and partner
+
+// Strings
+// Strings
+
+// 1. uses destructuring to declare five animal sounds
+const [moo, neigh, baa, oink, cluck] = farmAnimals.split(' ');
+
+// 2. uses destructuring to declare the four traditional animal names
+const [cow, dolly, babe, little] = farmAnimals.split(' ');
+
+// 3. uses destructuring to declare the three traditional animal colors
+const [blackAndWhite, , black, pink] = farmAnimals.split(' ');
+
+// Arrays
+
+// 4. uses destructuring to declare the seven traditional rainbow color variables using the color names
+const [red, orange, yellow, green, blue, indigo, violet] = colors;
+
+// 5. uses destructuring to declare six rainbow color variables using initials
+const [r, o, y, g, b, , v] = colors;
+
+// 6. uses destructuring to declare Indigo using indg
+const [, , , , , indg, ] = colors;
+
+// Objects
+
+// 7. uses destructuring to assign all appropriate variables using the keys as the variable names
+const { muppetName, color, song, job, partner } = muppet;
+
+// 8. uses destructuring to assign songs 2 and 4, and Kermit's job and partner
+const {
+  album: {
+    theMuppetMovie: { song2, song4 },
+  },
+  nestedJob,
+  nestedPartner
+} = nestedMuppet;
